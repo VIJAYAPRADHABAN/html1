@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login page </title>
+    <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
+    <script>
+ function  check()
+{
+var x=document.getElementByid ="a".value;
+var y=document.getElementByid ="b".value;
+if(x=="abc"&& y=="123")
+{
+alert("login successfully");
+window.location="home.html";
+}
+
+else
+{
+alert("login failed plzzz try again ");
+}
+}
+</script>
+
+</head>
+<body style="background-color:yellow;">
+    <form action ="home.html">
+        <table frame="box" align="center" width=100px height=200px>
+<h1 style="text-align:center"><b>LOGIN PAGE</b> </h1>
+       <tr>
+       <td>user name: </td>
+    <td><input type ="text" name:"username" placeholder="enter ur name" id="a" ></td>
+    </tr>
+    <tr>
+    <td>password: </td>
+<td><input type ="password" name:"password " placeholder="enter ur password" id="b" ></td>
+</tr>
+<tr>
+   <td></td>
+<td><input type="submit" onClick="check()" name="submit">
+<input type ="reset" name:"reset">
+<br><a href="register.html" >new user</a>
+</td>
+
+</tr>
+
+</table>
+</form>
+</body>
+</html></html>
